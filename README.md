@@ -1,4 +1,4 @@
-#RapidMax
+# RapidMax
 
 This is the rapidlib c++ machine learning library wrapped into a max object.
 (http://doc.gold.ac.uk/eavi/rapidmix/docs_cpp/annotated.html)
