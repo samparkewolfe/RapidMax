@@ -9,9 +9,6 @@ Build the external though the Xcode project found in source/myexternals/rapidmax
 
 See rapidmax.maxhelp for how to use the object, just drag the rapidmax.mxo into the help folder and reopen max for the helpfile to find it.
 
-### Known Bugs
-Object allows you to train on inputs which only consist of single ints or floats but then object does not like receiving single ints or floats to predict from.
-
 # max-sdk
 
 The Max Software Development Kit contains the API (headers, source, libraries) for building external objects (plug-ins) in C/C++ for [Max](https://cycling74.com/max7/). It additionally includes documentation of the API and example projects using the Xcode 6 and Visual Studio 2013 development environments.

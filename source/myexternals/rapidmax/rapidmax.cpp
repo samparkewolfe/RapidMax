@@ -34,7 +34,6 @@ void rapidmax_classify(t_rapidmax *x, t_symbol *s, long argc, t_atom *argv);
 int  rapidmax_fill_training_example(t_rapidmax *x, std::vector<double> &v, long argc, t_atom *argv);
 
 void free_dict(t_dictionary *d, long numkeys, t_symbol **keys);
-void rapidmax_process(t_rapidmax *x, t_symbol *s, long argc, t_atom *argv);
 void rapidmax_initialize(t_rapidmax *x);
 
 void rapidmax_read(t_rapidmax *x, t_symbol *s);
@@ -42,6 +41,12 @@ void rapidmax_doread(t_rapidmax *x, t_symbol *s);
 
 void rapidmax_write(t_rapidmax *x, t_symbol *s);
 void rapidmax_dowrite(t_rapidmax *x, t_symbol *s);
+
+void rapidmax_process_int(t_rapidmax *x, long l);
+void rapidmax_process_float(t_rapidmax *x, double f);
+void rapidmax_process_list(t_rapidmax *x, t_symbol *s, long argc, t_atom *argv);
+void rapidmax_process(t_rapidmax *x, long argc, float *argv);
+
 
 void ext_main(void *r)
 {
@@ -58,8 +63,12 @@ void ext_main(void *r)
     class_addmethod(c, (method)rapidmax_regress, "regress", A_GIMME, 0);
     class_addmethod(c, (method)rapidmax_classify, "classify", A_GIMME, 0);
 
-    class_addmethod(c, (method)rapidmax_process, "list", A_GIMME, 0);
+    class_addmethod(c, (method)rapidmax_process_int, "int", A_LONG, 0);
+    class_addmethod(c, (method)rapidmax_process_float, "float", A_FLOAT, 0);
+    class_addmethod(c, (method)rapidmax_process_list, "list", A_GIMME, 0);
+    
     class_addmethod(c, (method)rapidmax_initialize, "initialize", A_DEFSYM, 0);
+    
     class_addmethod(c, (method)rapidmax_read, "read", A_DEFSYM, 0);
     class_addmethod(c, (method)rapidmax_write, "write", A_DEFSYM, 0);
     
@@ -217,10 +226,35 @@ void rapidmax_doread(t_rapidmax *x, t_symbol *s)
     //object_post((t_object*)x, "Model is trained %d.", x->trained);
     
 }
- 
-//User sends new data straight into object
-void rapidmax_process(t_rapidmax *x, t_symbol *s, long argc, t_atom *argv)
+
+void rapidmax_process_int(t_rapidmax *x, long l)
 {
+    float f = (float)l;
+    rapidmax_process(x, 1, &f);
+}
+
+void rapidmax_process_float(t_rapidmax *x, double f)
+{
+    float newf = (float)f;
+    rapidmax_process(x, 1, &newf);
+}
+
+void rapidmax_process_list(t_rapidmax *x, t_symbol *s, long argc, t_atom *argv)
+{
+    
+    float *vals = new float[argc];
+    atom_getfloat_array (argc, argv, argc, vals);
+    
+    rapidmax_process(x, argc, vals);
+    
+    vals = nullptr;
+    delete[] vals;
+}
+
+//User sends new data straight into object
+void rapidmax_process(t_rapidmax *x, long argc, float *argv)
+{
+    
     //Check that models have been trained.
     if(!x->trained)
     {
@@ -231,16 +265,10 @@ void rapidmax_process(t_rapidmax *x, t_symbol *s, long argc, t_atom *argv)
     //check input type are floats and convert to C++ vector
     long i;
     std::vector<double> inputData_double;
-    t_atom *ap;
+    float *ap;
     for(i =0, ap = argv; i<argc; i++, ap++)
     {
-        if(atom_gettype(argv) != A_FLOAT)
-        {
-//            object_post((t_object*)x, "Inputs are not Floats");
-//            return;
-        }
-        
-        inputData_double.push_back(atom_getfloat(ap));
+        inputData_double.push_back(*ap);
     }
     
     //process vector using rapid api.
@@ -322,10 +350,11 @@ void rapidmax_train(t_rapidmax *x, t_symbol *s, long argc, t_atom *argv)
     if(atom_gettype(argv) != A_SYM)
     {
         object_post((t_object*)x, "Argument Type is Invalid (Must be SYMB)");
+        return;
     }
     
     incommingdict = dictobj_findregistered_retain (atom_getsym(argv));
-    object_post((t_object*)x, "Training on dictionary %s", atom_getsym(argv)->s_name);
+    object_post((t_object*)x, "Found dictionary %s", atom_getsym(argv)->s_name);
     
     //Tell em we got the dict.
     if(incommingdict == NULL)
@@ -338,7 +367,7 @@ void rapidmax_train(t_rapidmax *x, t_symbol *s, long argc, t_atom *argv)
     long       numkeys = 0;
     dictionary_getkeys(incommingdict, &numkeys, &keys);
     
-    object_post((t_object*)x, "Number of dictionary keys is %ld", numkeys);
+    object_post((t_object*)x, "Number of training examples in dict is %ld", numkeys);
     
     if(!numkeys)
     {
@@ -354,7 +383,7 @@ void rapidmax_train(t_rapidmax *x, t_symbol *s, long argc, t_atom *argv)
     long       numsubkeys = 0;
     t_symbol   **subkeys = NULL;
     
-    for(i = 0; i<numkeys; i++)
+    for(i = 0; i<numkeys; ++i)
     {
         
         //Make sure the elements of the dict are the right type.
@@ -394,24 +423,34 @@ void rapidmax_train(t_rapidmax *x, t_symbol *s, long argc, t_atom *argv)
         
         if(!has_input || !has_output)
         {
-            object_post((t_object*)x, "Contence of sub-dicitionary key %s does not have an input and output", keys[i]->s_name);
+            object_post((t_object*)x, "Contence of sub-dicitionary %s does not have an input and output", keys[i]->s_name);
             free_dict(incommingdict, numkeys, keys);
             return;
+        }
+        
+        if(i)
+        {
+            if(x->trainingSet[i-1].input.size() != input_size || x->trainingSet[i-1].output.size() != output_size)
+            {
+                object_post((t_object*)x, "Dimentions of sub-dicitionary %s's input or output are not consistent with the rest of the training data", keys[i]->s_name);
+                free_dict(incommingdict, numkeys, keys);
+                return;
+            }
         }
         
         trainingExample te;
         if(rapidmax_fill_training_example(x, te.input, input_size, input_atoms) || rapidmax_fill_training_example(x, te.output,output_size, output_atoms))
         {
-            object_post((t_object*)x, "Contence of sub-dicitionary key %s::input or output was not of a readable type (Long, Float)", keys[i]->s_name);
+            object_post((t_object*)x, "Contence of sub-dicitionary %s::input or output was not of a readable type (Long, Float)", keys[i]->s_name);
             free_dict(incommingdict, numkeys, keys);
             return;
         }
-            
+        
         //Push the new training example into the global training set.
         x->trainingSet.push_back(te);
     }
     
-    object_post((t_object*)x, "All training data copied: Size: %d", x->trainingSet.size());
+    object_post((t_object*)x, "All training data is correctly formatted");
     free_dict(incommingdict, numkeys, keys);
     
     //TRAIN
