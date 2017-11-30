@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1212.0, 683.0 ],
+		"rect" : [ 34.0, 79.0, 972.0, 683.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 455.100006, 21.0, 60.0, 22.0 ],
+					"style" : "",
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-37",
 					"maxclass" : "newobj",
 					"numinlets" : 6,
@@ -45,7 +58,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 761.400024, 596.0, 103.0, 22.0 ],
 					"style" : "",
-					"text" : "scale 0 127 -1. 1."
+					"text" : "scale 0 128 -1. 1."
 				}
 
 			}
@@ -58,7 +71,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 455.100006, 262.0, 103.0, 22.0 ],
 					"style" : "",
-					"text" : "scale -1. 1. 0 127"
+					"text" : "scale -1. 1. 0 128"
 				}
 
 			}
@@ -133,7 +146,6 @@
 
 					}
 ,
-					"size" : 5,
 					"style" : "",
 					"varname" : "multislider[1]"
 				}
@@ -314,7 +326,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 123.5, 432.0, 98.5, 22.0 ],
+					"patching_rect" : [ 123.5, 432.0, 72.0, 22.0 ],
 					"style" : "",
 					"text" : "pack s 0. 0."
 				}
@@ -396,7 +408,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 942.900024, 236.0, 192.0, 154.0 ],
+					"patching_rect" : [ 942.900024, 236.0, 194.0, 154.0 ],
 					"style" : "",
 					"text" : "4. Input a list of floats to a trained rapidmax object. \n\nIf the input dimentions are the same as the X training data dimantions, the model output a prediction from the left inlet. \n\nThe output will be a list of floats with the same dimentions as the Y training data."
 				}
@@ -447,7 +459,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 858.900024, 88.0, 219.0, 114.0 ],
+					"patching_rect" : [ 858.900024, 88.0, 221.0, 114.0 ],
 					"style" : "",
 					"text" : "3. regress: give the object the name of a dict object holding your training data. \n\nrapidmax will output a bang form the right outlet when training is done.\n\nRegress will train a neural network to predict values inbetween data points"
 				}
@@ -608,6 +620,13 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-10", 0 ]
@@ -816,8 +835,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-3" : [ "multislider", "multislider", 0 ],
-			"obj-15" : [ "multislider[1]", "multislider", 0 ]
+			"obj-15" : [ "multislider[1]", "multislider", 0 ],
+			"obj-3" : [ "multislider", "multislider", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
