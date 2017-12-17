@@ -1,7 +1,7 @@
 # RapidMax
 
-This is the rapidlib c++ machine learning library wrapped into a max object.
-(http://doc.gold.ac.uk/eavi/rapidmix/docs_cpp/annotated.html)
+This is the RapidLib C++ machine learning library wrapped into a max object.
+(http://gitlab.doc.gold.ac.uk/rapid-mix/RapidLib)
 
 This repo includes the max 7 sdk as well as the source code for the external.
 
