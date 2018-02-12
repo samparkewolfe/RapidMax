@@ -13,7 +13,6 @@
 
 typedef struct _rapidmax
 {
-    
 	t_object ob;
     void *m_outlet1, *m_outlet2;
     std::vector<trainingExample> trainingSet;
