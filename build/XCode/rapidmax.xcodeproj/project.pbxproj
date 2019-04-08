@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CA70CFD225BB66E0097DBF8 /* maxmspsdk.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1CA70CFC225BB66E0097DBF8 /* maxmspsdk.xcconfig */; };
+		1CA710F8225BB6B20097DBF8 /* rapidmax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CA70CFF225BB6B10097DBF8 /* rapidmax.cpp */; };
+		1CA718B6225BBC100097DBF8 /* json-forwards.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716AF225BBC0F0097DBF8 /* json-forwards.h */; };
+		1CA718B7225BBC100097DBF8 /* json.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716B0225BBC0F0097DBF8 /* json.h */; };
+		1CA718B8225BBC100097DBF8 /* jsoncpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CA716B1225BBC0F0097DBF8 /* jsoncpp.cpp */; };
+		1CA718B9225BBC100097DBF8 /* modelSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716B3225BBC0F0097DBF8 /* modelSet.h */; };
+		1CA718BA225BBC100097DBF8 /* regression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CA716B4225BBC0F0097DBF8 /* regression.cpp */; };
+		1CA718BB225BBC100097DBF8 /* neuralNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CA716B5225BBC0F0097DBF8 /* neuralNetwork.cpp */; };
+		1CA718BC225BBC100097DBF8 /* knnClassification.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716B6225BBC0F0097DBF8 /* knnClassification.h */; };
+		1CA718BD225BBC100097DBF8 /* trainingExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716B7225BBC0F0097DBF8 /* trainingExample.h */; };
+		1CA718BE225BBC100097DBF8 /* regression.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716B8225BBC0F0097DBF8 /* regression.h */; };
+		1CA718BF225BBC100097DBF8 /* modelSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CA716B9225BBC0F0097DBF8 /* modelSet.cpp */; };
+		1CA718C0225BBC100097DBF8 /* modelSetEmbindings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716BB225BBC0F0097DBF8 /* modelSetEmbindings.h */; };
+		1CA718C1225BBC100097DBF8 /* regressionEmbindings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716BC225BBC0F0097DBF8 /* regressionEmbindings.h */; };
+		1CA718C2225BBC100097DBF8 /* classificationEmbindings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716BD225BBC0F0097DBF8 /* classificationEmbindings.h */; };
+		1CA718C3225BBC100097DBF8 /* rapidMix.js in Resources */ = {isa = PBXBuildFile; fileRef = 1CA716BE225BBC0F0097DBF8 /* rapidMix.js */; };
+		1CA718C4225BBC100097DBF8 /* knnEmbindings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716BF225BBC0F0097DBF8 /* knnEmbindings.h */; };
+		1CA718C5225BBC100097DBF8 /* nnEmbindings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716C0225BBC0F0097DBF8 /* nnEmbindings.h */; };
+		1CA718C6225BBC100097DBF8 /* classification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CA716C1225BBC0F0097DBF8 /* classification.cpp */; };
+		1CA718C7225BBC100097DBF8 /* neuralNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716C2225BBC0F0097DBF8 /* neuralNetwork.h */; };
+		1CA718C8225BBC100097DBF8 /* classification.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716C3225BBC0F0097DBF8 /* classification.h */; };
+		1CA718C9225BBC100097DBF8 /* baseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716C4225BBC0F0097DBF8 /* baseModel.h */; };
+		1CA718CA225BBC100097DBF8 /* knnClassification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CA716C5225BBC0F0097DBF8 /* knnClassification.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1CA70CFC225BB66E0097DBF8 /* maxmspsdk.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = maxmspsdk.xcconfig; sourceTree = "<group>"; };
+		1CA70CFF225BB6B10097DBF8 /* rapidmax.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rapidmax.cpp; sourceTree = "<group>"; };
+		1CA716AF225BBC0F0097DBF8 /* json-forwards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "json-forwards.h"; sourceTree = "<group>"; };
+		1CA716B0225BBC0F0097DBF8 /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
+		1CA716B1225BBC0F0097DBF8 /* jsoncpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = jsoncpp.cpp; sourceTree = "<group>"; };
+		1CA716B3225BBC0F0097DBF8 /* modelSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modelSet.h; sourceTree = "<group>"; };
+		1CA716B4225BBC0F0097DBF8 /* regression.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = regression.cpp; sourceTree = "<group>"; };
+		1CA716B5225BBC0F0097DBF8 /* neuralNetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = neuralNetwork.cpp; sourceTree = "<group>"; };
+		1CA716B6225BBC0F0097DBF8 /* knnClassification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = knnClassification.h; sourceTree = "<group>"; };
+		1CA716B7225BBC0F0097DBF8 /* trainingExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trainingExample.h; sourceTree = "<group>"; };
+		1CA716B8225BBC0F0097DBF8 /* regression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regression.h; sourceTree = "<group>"; };
+		1CA716B9225BBC0F0097DBF8 /* modelSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = modelSet.cpp; sourceTree = "<group>"; };
+		1CA716BB225BBC0F0097DBF8 /* modelSetEmbindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modelSetEmbindings.h; sourceTree = "<group>"; };
+		1CA716BC225BBC0F0097DBF8 /* regressionEmbindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regressionEmbindings.h; sourceTree = "<group>"; };
+		1CA716BD225BBC0F0097DBF8 /* classificationEmbindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classificationEmbindings.h; sourceTree = "<group>"; };
+		1CA716BE225BBC0F0097DBF8 /* rapidMix.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rapidMix.js; sourceTree = "<group>"; };
+		1CA716BF225BBC0F0097DBF8 /* knnEmbindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = knnEmbindings.h; sourceTree = "<group>"; };
+		1CA716C0225BBC0F0097DBF8 /* nnEmbindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nnEmbindings.h; sourceTree = "<group>"; };
+		1CA716C1225BBC0F0097DBF8 /* classification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = classification.cpp; sourceTree = "<group>"; };
+		1CA716C2225BBC0F0097DBF8 /* neuralNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = neuralNetwork.h; sourceTree = "<group>"; };
+		1CA716C3225BBC0F0097DBF8 /* classification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classification.h; sourceTree = "<group>"; };
+		1CA716C4225BBC0F0097DBF8 /* baseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseModel.h; sourceTree = "<group>"; };
+		1CA716C5225BBC0F0097DBF8 /* knnClassification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = knnClassification.cpp; sourceTree = "<group>"; };
+		2FBBEAE508F335360078DB84 /* rapidmax.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rapidmax.mxo; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FBBEADC08F335360078DB84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* iterator */ = {
+			isa = PBXGroup;
+			children = (
+				1CA71480225BBC0F0097DBF8 /* RapidLib */,
+				1CA70CFC225BB66E0097DBF8 /* maxmspsdk.xcconfig */,
+				1CA70CFE225BB6B10097DBF8 /* source */,
+				19C28FB4FE9D528D11CA2CBB /* Products */,
+			);
+			name = iterator;
+			sourceTree = "<group>";
+		};
+		19C28FB4FE9D528D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FBBEAE508F335360078DB84 /* rapidmax.mxo */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CA70CFE225BB6B10097DBF8 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				1CA70CFF225BB6B10097DBF8 /* rapidmax.cpp */,
+			);
+			name = source;
+			path = ../../source;
+			sourceTree = "<group>";
+		};
+		1CA71480225BBC0F0097DBF8 /* RapidLib */ = {
+			isa = PBXGroup;
+			children = (
+				1CA716AD225BBC0F0097DBF8 /* dependancies */,
+				1CA716B2225BBC0F0097DBF8 /* src */,
+			);
+			name = RapidLib;
+			path = ../../include/RapidLib;
+			sourceTree = "<group>";
+		};
+		1CA716AD225BBC0F0097DBF8 /* dependancies */ = {
+			isa = PBXGroup;
+			children = (
+				1CA716AE225BBC0F0097DBF8 /* json */,
+				1CA716B1225BBC0F0097DBF8 /* jsoncpp.cpp */,
+			);
+			path = dependancies;
+			sourceTree = "<group>";
+		};
+		1CA716AE225BBC0F0097DBF8 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				1CA716AF225BBC0F0097DBF8 /* json-forwards.h */,
+				1CA716B0225BBC0F0097DBF8 /* json.h */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		1CA716B2225BBC0F0097DBF8 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				1CA716B3225BBC0F0097DBF8 /* modelSet.h */,
+				1CA716B4225BBC0F0097DBF8 /* regression.cpp */,
+				1CA716B5225BBC0F0097DBF8 /* neuralNetwork.cpp */,
+				1CA716B6225BBC0F0097DBF8 /* knnClassification.h */,
+				1CA716B7225BBC0F0097DBF8 /* trainingExample.h */,
+				1CA716B8225BBC0F0097DBF8 /* regression.h */,
+				1CA716B9225BBC0F0097DBF8 /* modelSet.cpp */,
+				1CA716BA225BBC0F0097DBF8 /* emscripten */,
+				1CA716C1225BBC0F0097DBF8 /* classification.cpp */,
+				1CA716C2225BBC0F0097DBF8 /* neuralNetwork.h */,
+				1CA716C3225BBC0F0097DBF8 /* classification.h */,
+				1CA716C4225BBC0F0097DBF8 /* baseModel.h */,
+				1CA716C5225BBC0F0097DBF8 /* knnClassification.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		1CA716BA225BBC0F0097DBF8 /* emscripten */ = {
+			isa = PBXGroup;
+			children = (
+				1CA716BB225BBC0F0097DBF8 /* modelSetEmbindings.h */,
+				1CA716BC225BBC0F0097DBF8 /* regressionEmbindings.h */,
+				1CA716BD225BBC0F0097DBF8 /* classificationEmbindings.h */,
+				1CA716BE225BBC0F0097DBF8 /* rapidMix.js */,
+				1CA716BF225BBC0F0097DBF8 /* knnEmbindings.h */,
+				1CA716C0225BBC0F0097DBF8 /* nnEmbindings.h */,
+			);
+			path = emscripten;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2FBBEAD708F335360078DB84 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CA718B6225BBC100097DBF8 /* json-forwards.h in Headers */,
+				1CA718B9225BBC100097DBF8 /* modelSet.h in Headers */,
+				1CA718C4225BBC100097DBF8 /* knnEmbindings.h in Headers */,
+				1CA718C5225BBC100097DBF8 /* nnEmbindings.h in Headers */,
+				1CA718BC225BBC100097DBF8 /* knnClassification.h in Headers */,
+				1CA718C0225BBC100097DBF8 /* modelSetEmbindings.h in Headers */,
+				1CA718BE225BBC100097DBF8 /* regression.h in Headers */,
+				1CA718C8225BBC100097DBF8 /* classification.h in Headers */,
+				1CA718C9225BBC100097DBF8 /* baseModel.h in Headers */,
+				1CA718C2225BBC100097DBF8 /* classificationEmbindings.h in Headers */,
+				1CA718B7225BBC100097DBF8 /* json.h in Headers */,
+				1CA718BD225BBC100097DBF8 /* trainingExample.h in Headers */,
+				1CA718C7225BBC100097DBF8 /* neuralNetwork.h in Headers */,
+				1CA718C1225BBC100097DBF8 /* regressionEmbindings.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2FBBEAD608F335360078DB84 /* max-external */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FBBEAE008F335360078DB84 /* Build configuration list for PBXNativeTarget "max-external" */;
+			buildPhases = (
+				2FBBEAD708F335360078DB84 /* Headers */,
+				2FBBEAD808F335360078DB84 /* Resources */,
+				2FBBEADA08F335360078DB84 /* Sources */,
+				2FBBEADC08F335360078DB84 /* Frameworks */,
+				2FBBEADF08F335360078DB84 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "max-external";
+			productName = iterator;
+			productReference = 2FBBEAE508F335360078DB84 /* rapidmax.mxo */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+			};
+			buildConfigurationList = 2FBBEACF08F335010078DB84 /* Build configuration list for PBXProject "rapidmax" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* iterator */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FBBEAD608F335360078DB84 /* max-external */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FBBEAD808F335360078DB84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CA70CFD225BB66E0097DBF8 /* maxmspsdk.xcconfig in Resources */,
+				1CA718C3225BBC100097DBF8 /* rapidMix.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		2FBBEADF08F335360078DB84 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FBBEADA08F335360078DB84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CA718C6225BBC100097DBF8 /* classification.cpp in Sources */,
+				1CA718BF225BBC100097DBF8 /* modelSet.cpp in Sources */,
+				1CA710F8225BB6B20097DBF8 /* rapidmax.cpp in Sources */,
+				1CA718B8225BBC100097DBF8 /* jsoncpp.cpp in Sources */,
+				1CA718CA225BBC100097DBF8 /* knnClassification.cpp in Sources */,
+				1CA718BA225BBC100097DBF8 /* regression.cpp in Sources */,
+				1CA718BB225BBC100097DBF8 /* neuralNetwork.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2FBBEAD008F335010078DB84 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Development;
+		};
+		2FBBEAD108F335010078DB84 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+			};
+			name = Deployment;
+		};
+		2FBBEAE108F335360078DB84 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CA70CFC225BB66E0097DBF8 /* maxmspsdk.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					"\"$(C74SUPPORT)/max-includes\"",
+					"\"$(C74SUPPORT)/msp-includes\"",
+					"\"$(C74SUPPORT)/jit-includes\"",
+					"\"$(PROJECT_DIR)/../../include/RapidLib/src\"",
+					"\"$(PROJECT_DIR)/../../include/RapidLib/dependancies/json\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "$(C74_SYM_LINKER_FLAGS)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cycling74.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = rapidmax;
+				VALID_ARCHS = x86_64;
+			};
+			name = Development;
+		};
+		2FBBEAE208F335360078DB84 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CA70CFC225BB66E0097DBF8 /* maxmspsdk.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				COPY_PHASE_STRIP = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(C74SUPPORT)/max-includes\"",
+					"\"$(C74SUPPORT)/msp-includes\"",
+					"\"$(C74SUPPORT)/jit-includes\"",
+					"\"$(PROJECT_DIR)/../../include/RapidLib/src\"",
+					"\"$(PROJECT_DIR)/../../include/RapidLib/dependancies/json\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "$(C74_SYM_LINKER_FLAGS)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cycling74.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = rapidmax;
+				VALID_ARCHS = x86_64;
+			};
+			name = Deployment;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FBBEACF08F335010078DB84 /* Build configuration list for PBXProject "rapidmax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FBBEAD008F335010078DB84 /* Development */,
+				2FBBEAD108F335010078DB84 /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		2FBBEAE008F335360078DB84 /* Build configuration list for PBXNativeTarget "max-external" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FBBEAE108F335360078DB84 /* Development */,
+				2FBBEAE208F335360078DB84 /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
