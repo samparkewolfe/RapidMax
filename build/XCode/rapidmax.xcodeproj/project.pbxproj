@@ -7,55 +7,109 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C2E7A25225D19C4002D1D2B /* json-forwards.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E773A225D19C3002D1D2B /* json-forwards.h */; };
+		1C2E7A26225D19C4002D1D2B /* json.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E773B225D19C3002D1D2B /* json.h */; };
+		1C2E7A27225D19C4002D1D2B /* libsvm.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E773D225D19C3002D1D2B /* libsvm.h */; };
+		1C2E7A28225D19C4002D1D2B /* libsvm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C2E773E225D19C3002D1D2B /* libsvm.cpp */; };
+		1C2E7A29225D19C4002D1D2B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C2E7740225D19C3002D1D2B /* README.md */; };
+		1C2E7A2A225D19C4002D1D2B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1C2E7741225D19C3002D1D2B /* .gitignore */; };
+		1C2E7A2B225D19C4002D1D2B /* Doxyfile in Resources */ = {isa = PBXBuildFile; fileRef = 1C2E7743225D19C3002D1D2B /* Doxyfile */; };
+		1C2E7A2C225D19C4002D1D2B /* filter_utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E7745225D19C3002D1D2B /* filter_utilities.h */; };
+		1C2E7A2D225D19C4002D1D2B /* filter_utilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C2E7746225D19C3002D1D2B /* filter_utilities.cpp */; };
+		1C2E7A2E225D19C4002D1D2B /* BayesianFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E7747225D19C3002D1D2B /* BayesianFilter.h */; };
+		1C2E7A2F225D19C4002D1D2B /* BayesianFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C2E7748225D19C3002D1D2B /* BayesianFilter.cpp */; };
+		1C2E7A30225D19C4002D1D2B /* jsoncpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C2E7749225D19C3002D1D2B /* jsoncpp.cpp */; };
+		1C2E7A6C225D19C4002D1D2B /* modelSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E779A225D19C4002D1D2B /* modelSet.h */; };
+		1C2E7A6D225D19C4002D1D2B /* rapidStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C2E779B225D19C4002D1D2B /* rapidStream.cpp */; };
+		1C2E7A6E225D19C4002D1D2B /* rapidStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E779C225D19C4002D1D2B /* rapidStream.h */; };
+		1C2E7A6F225D19C4002D1D2B /* regression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C2E779D225D19C4002D1D2B /* regression.cpp */; };
+		1C2E7A70225D19C4002D1D2B /* svmClassification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C2E779E225D19C4002D1D2B /* svmClassification.cpp */; };
+		1C2E7A71225D19C4002D1D2B /* dtw.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E779F225D19C4002D1D2B /* dtw.h */; };
+		1C2E7A72225D19C4002D1D2B /* fastDTW.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C2E77A0225D19C4002D1D2B /* fastDTW.cpp */; };
+		1C2E7A73225D19C4002D1D2B /* dtw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C2E77A1225D19C4002D1D2B /* dtw.cpp */; };
+		1C2E7A74225D19C4002D1D2B /* neuralNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C2E77A2225D19C4002D1D2B /* neuralNetwork.cpp */; };
+		1C2E7A75225D19C4002D1D2B /* searchWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E77A3225D19C4002D1D2B /* searchWindow.h */; };
+		1C2E7A76225D19C4002D1D2B /* knnClassification.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E77A4225D19C4002D1D2B /* knnClassification.h */; };
+		1C2E7A77225D19C4002D1D2B /* trainingExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E77A5225D19C4002D1D2B /* trainingExample.h */; };
+		1C2E7A78225D19C4002D1D2B /* searchWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C2E77A6225D19C4002D1D2B /* searchWindow.cpp */; };
+		1C2E7A79225D19C4002D1D2B /* fastDTW.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E77A7225D19C4002D1D2B /* fastDTW.h */; };
+		1C2E7A7A225D19C4002D1D2B /* regression.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E77A8225D19C4002D1D2B /* regression.h */; };
+		1C2E7A7B225D19C4002D1D2B /* svmClassification.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E77A9225D19C4002D1D2B /* svmClassification.h */; };
+		1C2E7A7C225D19C4002D1D2B /* modelSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C2E77AA225D19C4002D1D2B /* modelSet.cpp */; };
+		1C2E7A7D225D19C4002D1D2B /* seriesClassificationEmbindings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E77AC225D19C4002D1D2B /* seriesClassificationEmbindings.h */; };
+		1C2E7A7E225D19C4002D1D2B /* modelSetEmbindings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E77AD225D19C4002D1D2B /* modelSetEmbindings.h */; };
+		1C2E7A7F225D19C4002D1D2B /* regressionEmbindings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E77AE225D19C4002D1D2B /* regressionEmbindings.h */; };
+		1C2E7A80225D19C4002D1D2B /* classificationEmbindings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E77AF225D19C4002D1D2B /* classificationEmbindings.h */; };
+		1C2E7A81225D19C4002D1D2B /* rapidStreamEmbindings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E77B0225D19C4002D1D2B /* rapidStreamEmbindings.h */; };
+		1C2E7A82225D19C4002D1D2B /* svmEmbindings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E77B1225D19C4002D1D2B /* svmEmbindings.h */; };
+		1C2E7A83225D19C4002D1D2B /* knnEmbindings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E77B2225D19C4002D1D2B /* knnEmbindings.h */; };
+		1C2E7A84225D19C4002D1D2B /* rapidLibPost.js in Resources */ = {isa = PBXBuildFile; fileRef = 1C2E77B3225D19C4002D1D2B /* rapidLibPost.js */; };
+		1C2E7A85225D19C4002D1D2B /* nnEmbindings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E77B4225D19C4002D1D2B /* nnEmbindings.h */; };
+		1C2E7A86225D19C4002D1D2B /* nodeEnv.js in Resources */ = {isa = PBXBuildFile; fileRef = 1C2E77B5225D19C4002D1D2B /* nodeEnv.js */; };
+		1C2E7A87225D19C4002D1D2B /* classification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C2E77B6225D19C4002D1D2B /* classification.cpp */; };
+		1C2E7A88225D19C4002D1D2B /* warpPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E77B7225D19C4002D1D2B /* warpPath.h */; };
+		1C2E7A89225D19C4002D1D2B /* neuralNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E77B8225D19C4002D1D2B /* neuralNetwork.h */; };
+		1C2E7A8A225D19C4002D1D2B /* classification.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E77B9225D19C4002D1D2B /* classification.h */; };
+		1C2E7A8B225D19C4002D1D2B /* seriesClassification.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E77BA225D19C4002D1D2B /* seriesClassification.h */; };
+		1C2E7A8C225D19C4002D1D2B /* baseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E77BB225D19C4002D1D2B /* baseModel.h */; };
+		1C2E7A8D225D19C4002D1D2B /* warpPath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C2E77BC225D19C4002D1D2B /* warpPath.cpp */; };
+		1C2E7A8E225D19C4002D1D2B /* seriesClassification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C2E77BD225D19C4002D1D2B /* seriesClassification.cpp */; };
+		1C2E7A8F225D19C4002D1D2B /* knnClassification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C2E77BE225D19C4002D1D2B /* knnClassification.cpp */; };
 		1CA70CFD225BB66E0097DBF8 /* maxmspsdk.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1CA70CFC225BB66E0097DBF8 /* maxmspsdk.xcconfig */; };
 		1CA710F8225BB6B20097DBF8 /* rapidmax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CA70CFF225BB6B10097DBF8 /* rapidmax.cpp */; };
-		1CA718B6225BBC100097DBF8 /* json-forwards.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716AF225BBC0F0097DBF8 /* json-forwards.h */; };
-		1CA718B7225BBC100097DBF8 /* json.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716B0225BBC0F0097DBF8 /* json.h */; };
-		1CA718B8225BBC100097DBF8 /* jsoncpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CA716B1225BBC0F0097DBF8 /* jsoncpp.cpp */; };
-		1CA718B9225BBC100097DBF8 /* modelSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716B3225BBC0F0097DBF8 /* modelSet.h */; };
-		1CA718BA225BBC100097DBF8 /* regression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CA716B4225BBC0F0097DBF8 /* regression.cpp */; };
-		1CA718BB225BBC100097DBF8 /* neuralNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CA716B5225BBC0F0097DBF8 /* neuralNetwork.cpp */; };
-		1CA718BC225BBC100097DBF8 /* knnClassification.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716B6225BBC0F0097DBF8 /* knnClassification.h */; };
-		1CA718BD225BBC100097DBF8 /* trainingExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716B7225BBC0F0097DBF8 /* trainingExample.h */; };
-		1CA718BE225BBC100097DBF8 /* regression.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716B8225BBC0F0097DBF8 /* regression.h */; };
-		1CA718BF225BBC100097DBF8 /* modelSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CA716B9225BBC0F0097DBF8 /* modelSet.cpp */; };
-		1CA718C0225BBC100097DBF8 /* modelSetEmbindings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716BB225BBC0F0097DBF8 /* modelSetEmbindings.h */; };
-		1CA718C1225BBC100097DBF8 /* regressionEmbindings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716BC225BBC0F0097DBF8 /* regressionEmbindings.h */; };
-		1CA718C2225BBC100097DBF8 /* classificationEmbindings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716BD225BBC0F0097DBF8 /* classificationEmbindings.h */; };
-		1CA718C3225BBC100097DBF8 /* rapidMix.js in Resources */ = {isa = PBXBuildFile; fileRef = 1CA716BE225BBC0F0097DBF8 /* rapidMix.js */; };
-		1CA718C4225BBC100097DBF8 /* knnEmbindings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716BF225BBC0F0097DBF8 /* knnEmbindings.h */; };
-		1CA718C5225BBC100097DBF8 /* nnEmbindings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716C0225BBC0F0097DBF8 /* nnEmbindings.h */; };
-		1CA718C6225BBC100097DBF8 /* classification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CA716C1225BBC0F0097DBF8 /* classification.cpp */; };
-		1CA718C7225BBC100097DBF8 /* neuralNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716C2225BBC0F0097DBF8 /* neuralNetwork.h */; };
-		1CA718C8225BBC100097DBF8 /* classification.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716C3225BBC0F0097DBF8 /* classification.h */; };
-		1CA718C9225BBC100097DBF8 /* baseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA716C4225BBC0F0097DBF8 /* baseModel.h */; };
-		1CA718CA225BBC100097DBF8 /* knnClassification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CA716C5225BBC0F0097DBF8 /* knnClassification.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C2E773A225D19C3002D1D2B /* json-forwards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "json-forwards.h"; sourceTree = "<group>"; };
+		1C2E773B225D19C3002D1D2B /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
+		1C2E773D225D19C3002D1D2B /* libsvm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libsvm.h; sourceTree = "<group>"; };
+		1C2E773E225D19C3002D1D2B /* libsvm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = libsvm.cpp; sourceTree = "<group>"; };
+		1C2E7740225D19C3002D1D2B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1C2E7741225D19C3002D1D2B /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		1C2E7743225D19C3002D1D2B /* Doxyfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Doxyfile; sourceTree = "<group>"; };
+		1C2E7745225D19C3002D1D2B /* filter_utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filter_utilities.h; sourceTree = "<group>"; };
+		1C2E7746225D19C3002D1D2B /* filter_utilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = filter_utilities.cpp; sourceTree = "<group>"; };
+		1C2E7747225D19C3002D1D2B /* BayesianFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BayesianFilter.h; sourceTree = "<group>"; };
+		1C2E7748225D19C3002D1D2B /* BayesianFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BayesianFilter.cpp; sourceTree = "<group>"; };
+		1C2E7749225D19C3002D1D2B /* jsoncpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = jsoncpp.cpp; sourceTree = "<group>"; };
+		1C2E779A225D19C4002D1D2B /* modelSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modelSet.h; sourceTree = "<group>"; };
+		1C2E779B225D19C4002D1D2B /* rapidStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rapidStream.cpp; sourceTree = "<group>"; };
+		1C2E779C225D19C4002D1D2B /* rapidStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rapidStream.h; sourceTree = "<group>"; };
+		1C2E779D225D19C4002D1D2B /* regression.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = regression.cpp; sourceTree = "<group>"; };
+		1C2E779E225D19C4002D1D2B /* svmClassification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = svmClassification.cpp; sourceTree = "<group>"; };
+		1C2E779F225D19C4002D1D2B /* dtw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dtw.h; sourceTree = "<group>"; };
+		1C2E77A0225D19C4002D1D2B /* fastDTW.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fastDTW.cpp; sourceTree = "<group>"; };
+		1C2E77A1225D19C4002D1D2B /* dtw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dtw.cpp; sourceTree = "<group>"; };
+		1C2E77A2225D19C4002D1D2B /* neuralNetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = neuralNetwork.cpp; sourceTree = "<group>"; };
+		1C2E77A3225D19C4002D1D2B /* searchWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchWindow.h; sourceTree = "<group>"; };
+		1C2E77A4225D19C4002D1D2B /* knnClassification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = knnClassification.h; sourceTree = "<group>"; };
+		1C2E77A5225D19C4002D1D2B /* trainingExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trainingExample.h; sourceTree = "<group>"; };
+		1C2E77A6225D19C4002D1D2B /* searchWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = searchWindow.cpp; sourceTree = "<group>"; };
+		1C2E77A7225D19C4002D1D2B /* fastDTW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastDTW.h; sourceTree = "<group>"; };
+		1C2E77A8225D19C4002D1D2B /* regression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regression.h; sourceTree = "<group>"; };
+		1C2E77A9225D19C4002D1D2B /* svmClassification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = svmClassification.h; sourceTree = "<group>"; };
+		1C2E77AA225D19C4002D1D2B /* modelSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = modelSet.cpp; sourceTree = "<group>"; };
+		1C2E77AC225D19C4002D1D2B /* seriesClassificationEmbindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seriesClassificationEmbindings.h; sourceTree = "<group>"; };
+		1C2E77AD225D19C4002D1D2B /* modelSetEmbindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modelSetEmbindings.h; sourceTree = "<group>"; };
+		1C2E77AE225D19C4002D1D2B /* regressionEmbindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regressionEmbindings.h; sourceTree = "<group>"; };
+		1C2E77AF225D19C4002D1D2B /* classificationEmbindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classificationEmbindings.h; sourceTree = "<group>"; };
+		1C2E77B0225D19C4002D1D2B /* rapidStreamEmbindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rapidStreamEmbindings.h; sourceTree = "<group>"; };
+		1C2E77B1225D19C4002D1D2B /* svmEmbindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = svmEmbindings.h; sourceTree = "<group>"; };
+		1C2E77B2225D19C4002D1D2B /* knnEmbindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = knnEmbindings.h; sourceTree = "<group>"; };
+		1C2E77B3225D19C4002D1D2B /* rapidLibPost.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rapidLibPost.js; sourceTree = "<group>"; };
+		1C2E77B4225D19C4002D1D2B /* nnEmbindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nnEmbindings.h; sourceTree = "<group>"; };
+		1C2E77B5225D19C4002D1D2B /* nodeEnv.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = nodeEnv.js; sourceTree = "<group>"; };
+		1C2E77B6225D19C4002D1D2B /* classification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = classification.cpp; sourceTree = "<group>"; };
+		1C2E77B7225D19C4002D1D2B /* warpPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = warpPath.h; sourceTree = "<group>"; };
+		1C2E77B8225D19C4002D1D2B /* neuralNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = neuralNetwork.h; sourceTree = "<group>"; };
+		1C2E77B9225D19C4002D1D2B /* classification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classification.h; sourceTree = "<group>"; };
+		1C2E77BA225D19C4002D1D2B /* seriesClassification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seriesClassification.h; sourceTree = "<group>"; };
+		1C2E77BB225D19C4002D1D2B /* baseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseModel.h; sourceTree = "<group>"; };
+		1C2E77BC225D19C4002D1D2B /* warpPath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = warpPath.cpp; sourceTree = "<group>"; };
+		1C2E77BD225D19C4002D1D2B /* seriesClassification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = seriesClassification.cpp; sourceTree = "<group>"; };
+		1C2E77BE225D19C4002D1D2B /* knnClassification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = knnClassification.cpp; sourceTree = "<group>"; };
 		1CA70CFC225BB66E0097DBF8 /* maxmspsdk.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = maxmspsdk.xcconfig; sourceTree = "<group>"; };
 		1CA70CFF225BB6B10097DBF8 /* rapidmax.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rapidmax.cpp; sourceTree = "<group>"; };
-		1CA716AF225BBC0F0097DBF8 /* json-forwards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "json-forwards.h"; sourceTree = "<group>"; };
-		1CA716B0225BBC0F0097DBF8 /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
-		1CA716B1225BBC0F0097DBF8 /* jsoncpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = jsoncpp.cpp; sourceTree = "<group>"; };
-		1CA716B3225BBC0F0097DBF8 /* modelSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modelSet.h; sourceTree = "<group>"; };
-		1CA716B4225BBC0F0097DBF8 /* regression.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = regression.cpp; sourceTree = "<group>"; };
-		1CA716B5225BBC0F0097DBF8 /* neuralNetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = neuralNetwork.cpp; sourceTree = "<group>"; };
-		1CA716B6225BBC0F0097DBF8 /* knnClassification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = knnClassification.h; sourceTree = "<group>"; };
-		1CA716B7225BBC0F0097DBF8 /* trainingExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trainingExample.h; sourceTree = "<group>"; };
-		1CA716B8225BBC0F0097DBF8 /* regression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regression.h; sourceTree = "<group>"; };
-		1CA716B9225BBC0F0097DBF8 /* modelSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = modelSet.cpp; sourceTree = "<group>"; };
-		1CA716BB225BBC0F0097DBF8 /* modelSetEmbindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modelSetEmbindings.h; sourceTree = "<group>"; };
-		1CA716BC225BBC0F0097DBF8 /* regressionEmbindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regressionEmbindings.h; sourceTree = "<group>"; };
-		1CA716BD225BBC0F0097DBF8 /* classificationEmbindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classificationEmbindings.h; sourceTree = "<group>"; };
-		1CA716BE225BBC0F0097DBF8 /* rapidMix.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rapidMix.js; sourceTree = "<group>"; };
-		1CA716BF225BBC0F0097DBF8 /* knnEmbindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = knnEmbindings.h; sourceTree = "<group>"; };
-		1CA716C0225BBC0F0097DBF8 /* nnEmbindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nnEmbindings.h; sourceTree = "<group>"; };
-		1CA716C1225BBC0F0097DBF8 /* classification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = classification.cpp; sourceTree = "<group>"; };
-		1CA716C2225BBC0F0097DBF8 /* neuralNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = neuralNetwork.h; sourceTree = "<group>"; };
-		1CA716C3225BBC0F0097DBF8 /* classification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classification.h; sourceTree = "<group>"; };
-		1CA716C4225BBC0F0097DBF8 /* baseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseModel.h; sourceTree = "<group>"; };
-		1CA716C5225BBC0F0097DBF8 /* knnClassification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = knnClassification.cpp; sourceTree = "<group>"; };
 		2FBBEAE508F335360078DB84 /* rapidmax.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rapidmax.mxo; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -73,7 +127,7 @@
 		089C166AFE841209C02AAC07 /* iterator */ = {
 			isa = PBXGroup;
 			children = (
-				1CA71480225BBC0F0097DBF8 /* RapidLib */,
+				1C2E7474225D19C2002D1D2B /* RapidLib */,
 				1CA70CFC225BB66E0097DBF8 /* maxmspsdk.xcconfig */,
 				1CA70CFE225BB6B10097DBF8 /* source */,
 				19C28FB4FE9D528D11CA2CBB /* Products */,
@@ -89,6 +143,126 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		1C2E7474225D19C2002D1D2B /* RapidLib */ = {
+			isa = PBXGroup;
+			children = (
+				1C2E7738225D19C3002D1D2B /* dependencies */,
+				1C2E7799225D19C4002D1D2B /* src */,
+			);
+			name = RapidLib;
+			path = ../../include/RapidLib;
+			sourceTree = "<group>";
+		};
+		1C2E7738225D19C3002D1D2B /* dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				1C2E7739225D19C3002D1D2B /* json */,
+				1C2E773C225D19C3002D1D2B /* libsvm */,
+				1C2E773F225D19C3002D1D2B /* bayesfilter */,
+				1C2E7749225D19C3002D1D2B /* jsoncpp.cpp */,
+			);
+			path = dependencies;
+			sourceTree = "<group>";
+		};
+		1C2E7739225D19C3002D1D2B /* json */ = {
+			isa = PBXGroup;
+			children = (
+				1C2E773A225D19C3002D1D2B /* json-forwards.h */,
+				1C2E773B225D19C3002D1D2B /* json.h */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		1C2E773C225D19C3002D1D2B /* libsvm */ = {
+			isa = PBXGroup;
+			children = (
+				1C2E773D225D19C3002D1D2B /* libsvm.h */,
+				1C2E773E225D19C3002D1D2B /* libsvm.cpp */,
+			);
+			path = libsvm;
+			sourceTree = "<group>";
+		};
+		1C2E773F225D19C3002D1D2B /* bayesfilter */ = {
+			isa = PBXGroup;
+			children = (
+				1C2E7740225D19C3002D1D2B /* README.md */,
+				1C2E7741225D19C3002D1D2B /* .gitignore */,
+				1C2E7742225D19C3002D1D2B /* doc */,
+				1C2E7744225D19C3002D1D2B /* src */,
+			);
+			path = bayesfilter;
+			sourceTree = "<group>";
+		};
+		1C2E7742225D19C3002D1D2B /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				1C2E7743225D19C3002D1D2B /* Doxyfile */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		1C2E7744225D19C3002D1D2B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				1C2E7745225D19C3002D1D2B /* filter_utilities.h */,
+				1C2E7746225D19C3002D1D2B /* filter_utilities.cpp */,
+				1C2E7747225D19C3002D1D2B /* BayesianFilter.h */,
+				1C2E7748225D19C3002D1D2B /* BayesianFilter.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		1C2E7799225D19C4002D1D2B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				1C2E779A225D19C4002D1D2B /* modelSet.h */,
+				1C2E779B225D19C4002D1D2B /* rapidStream.cpp */,
+				1C2E779C225D19C4002D1D2B /* rapidStream.h */,
+				1C2E779D225D19C4002D1D2B /* regression.cpp */,
+				1C2E779E225D19C4002D1D2B /* svmClassification.cpp */,
+				1C2E779F225D19C4002D1D2B /* dtw.h */,
+				1C2E77A0225D19C4002D1D2B /* fastDTW.cpp */,
+				1C2E77A1225D19C4002D1D2B /* dtw.cpp */,
+				1C2E77A2225D19C4002D1D2B /* neuralNetwork.cpp */,
+				1C2E77A3225D19C4002D1D2B /* searchWindow.h */,
+				1C2E77A4225D19C4002D1D2B /* knnClassification.h */,
+				1C2E77A5225D19C4002D1D2B /* trainingExample.h */,
+				1C2E77A6225D19C4002D1D2B /* searchWindow.cpp */,
+				1C2E77A7225D19C4002D1D2B /* fastDTW.h */,
+				1C2E77A8225D19C4002D1D2B /* regression.h */,
+				1C2E77A9225D19C4002D1D2B /* svmClassification.h */,
+				1C2E77AA225D19C4002D1D2B /* modelSet.cpp */,
+				1C2E77AB225D19C4002D1D2B /* emscripten */,
+				1C2E77B6225D19C4002D1D2B /* classification.cpp */,
+				1C2E77B7225D19C4002D1D2B /* warpPath.h */,
+				1C2E77B8225D19C4002D1D2B /* neuralNetwork.h */,
+				1C2E77B9225D19C4002D1D2B /* classification.h */,
+				1C2E77BA225D19C4002D1D2B /* seriesClassification.h */,
+				1C2E77BB225D19C4002D1D2B /* baseModel.h */,
+				1C2E77BC225D19C4002D1D2B /* warpPath.cpp */,
+				1C2E77BD225D19C4002D1D2B /* seriesClassification.cpp */,
+				1C2E77BE225D19C4002D1D2B /* knnClassification.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		1C2E77AB225D19C4002D1D2B /* emscripten */ = {
+			isa = PBXGroup;
+			children = (
+				1C2E77AC225D19C4002D1D2B /* seriesClassificationEmbindings.h */,
+				1C2E77AD225D19C4002D1D2B /* modelSetEmbindings.h */,
+				1C2E77AE225D19C4002D1D2B /* regressionEmbindings.h */,
+				1C2E77AF225D19C4002D1D2B /* classificationEmbindings.h */,
+				1C2E77B0225D19C4002D1D2B /* rapidStreamEmbindings.h */,
+				1C2E77B1225D19C4002D1D2B /* svmEmbindings.h */,
+				1C2E77B2225D19C4002D1D2B /* knnEmbindings.h */,
+				1C2E77B3225D19C4002D1D2B /* rapidLibPost.js */,
+				1C2E77B4225D19C4002D1D2B /* nnEmbindings.h */,
+				1C2E77B5225D19C4002D1D2B /* nodeEnv.js */,
+			);
+			path = emscripten;
+			sourceTree = "<group>";
+		};
 		1CA70CFE225BB6B10097DBF8 /* source */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,67 +272,6 @@
 			path = ../../source;
 			sourceTree = "<group>";
 		};
-		1CA71480225BBC0F0097DBF8 /* RapidLib */ = {
-			isa = PBXGroup;
-			children = (
-				1CA716AD225BBC0F0097DBF8 /* dependancies */,
-				1CA716B2225BBC0F0097DBF8 /* src */,
-			);
-			name = RapidLib;
-			path = ../../include/RapidLib;
-			sourceTree = "<group>";
-		};
-		1CA716AD225BBC0F0097DBF8 /* dependancies */ = {
-			isa = PBXGroup;
-			children = (
-				1CA716AE225BBC0F0097DBF8 /* json */,
-				1CA716B1225BBC0F0097DBF8 /* jsoncpp.cpp */,
-			);
-			path = dependancies;
-			sourceTree = "<group>";
-		};
-		1CA716AE225BBC0F0097DBF8 /* json */ = {
-			isa = PBXGroup;
-			children = (
-				1CA716AF225BBC0F0097DBF8 /* json-forwards.h */,
-				1CA716B0225BBC0F0097DBF8 /* json.h */,
-			);
-			path = json;
-			sourceTree = "<group>";
-		};
-		1CA716B2225BBC0F0097DBF8 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				1CA716B3225BBC0F0097DBF8 /* modelSet.h */,
-				1CA716B4225BBC0F0097DBF8 /* regression.cpp */,
-				1CA716B5225BBC0F0097DBF8 /* neuralNetwork.cpp */,
-				1CA716B6225BBC0F0097DBF8 /* knnClassification.h */,
-				1CA716B7225BBC0F0097DBF8 /* trainingExample.h */,
-				1CA716B8225BBC0F0097DBF8 /* regression.h */,
-				1CA716B9225BBC0F0097DBF8 /* modelSet.cpp */,
-				1CA716BA225BBC0F0097DBF8 /* emscripten */,
-				1CA716C1225BBC0F0097DBF8 /* classification.cpp */,
-				1CA716C2225BBC0F0097DBF8 /* neuralNetwork.h */,
-				1CA716C3225BBC0F0097DBF8 /* classification.h */,
-				1CA716C4225BBC0F0097DBF8 /* baseModel.h */,
-				1CA716C5225BBC0F0097DBF8 /* knnClassification.cpp */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		1CA716BA225BBC0F0097DBF8 /* emscripten */ = {
-			isa = PBXGroup;
-			children = (
-				1CA716BB225BBC0F0097DBF8 /* modelSetEmbindings.h */,
-				1CA716BC225BBC0F0097DBF8 /* regressionEmbindings.h */,
-				1CA716BD225BBC0F0097DBF8 /* classificationEmbindings.h */,
-				1CA716BE225BBC0F0097DBF8 /* rapidMix.js */,
-				1CA716BF225BBC0F0097DBF8 /* knnEmbindings.h */,
-				1CA716C0225BBC0F0097DBF8 /* nnEmbindings.h */,
-			);
-			path = emscripten;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -166,20 +279,33 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CA718B6225BBC100097DBF8 /* json-forwards.h in Headers */,
-				1CA718B9225BBC100097DBF8 /* modelSet.h in Headers */,
-				1CA718C4225BBC100097DBF8 /* knnEmbindings.h in Headers */,
-				1CA718C5225BBC100097DBF8 /* nnEmbindings.h in Headers */,
-				1CA718BC225BBC100097DBF8 /* knnClassification.h in Headers */,
-				1CA718C0225BBC100097DBF8 /* modelSetEmbindings.h in Headers */,
-				1CA718BE225BBC100097DBF8 /* regression.h in Headers */,
-				1CA718C8225BBC100097DBF8 /* classification.h in Headers */,
-				1CA718C9225BBC100097DBF8 /* baseModel.h in Headers */,
-				1CA718C2225BBC100097DBF8 /* classificationEmbindings.h in Headers */,
-				1CA718B7225BBC100097DBF8 /* json.h in Headers */,
-				1CA718BD225BBC100097DBF8 /* trainingExample.h in Headers */,
-				1CA718C7225BBC100097DBF8 /* neuralNetwork.h in Headers */,
-				1CA718C1225BBC100097DBF8 /* regressionEmbindings.h in Headers */,
+				1C2E7A7D225D19C4002D1D2B /* seriesClassificationEmbindings.h in Headers */,
+				1C2E7A77225D19C4002D1D2B /* trainingExample.h in Headers */,
+				1C2E7A76225D19C4002D1D2B /* knnClassification.h in Headers */,
+				1C2E7A88225D19C4002D1D2B /* warpPath.h in Headers */,
+				1C2E7A27225D19C4002D1D2B /* libsvm.h in Headers */,
+				1C2E7A89225D19C4002D1D2B /* neuralNetwork.h in Headers */,
+				1C2E7A82225D19C4002D1D2B /* svmEmbindings.h in Headers */,
+				1C2E7A83225D19C4002D1D2B /* knnEmbindings.h in Headers */,
+				1C2E7A8C225D19C4002D1D2B /* baseModel.h in Headers */,
+				1C2E7A7F225D19C4002D1D2B /* regressionEmbindings.h in Headers */,
+				1C2E7A2E225D19C4002D1D2B /* BayesianFilter.h in Headers */,
+				1C2E7A7E225D19C4002D1D2B /* modelSetEmbindings.h in Headers */,
+				1C2E7A6C225D19C4002D1D2B /* modelSet.h in Headers */,
+				1C2E7A81225D19C4002D1D2B /* rapidStreamEmbindings.h in Headers */,
+				1C2E7A75225D19C4002D1D2B /* searchWindow.h in Headers */,
+				1C2E7A8A225D19C4002D1D2B /* classification.h in Headers */,
+				1C2E7A8B225D19C4002D1D2B /* seriesClassification.h in Headers */,
+				1C2E7A2C225D19C4002D1D2B /* filter_utilities.h in Headers */,
+				1C2E7A26225D19C4002D1D2B /* json.h in Headers */,
+				1C2E7A25225D19C4002D1D2B /* json-forwards.h in Headers */,
+				1C2E7A80225D19C4002D1D2B /* classificationEmbindings.h in Headers */,
+				1C2E7A7B225D19C4002D1D2B /* svmClassification.h in Headers */,
+				1C2E7A79225D19C4002D1D2B /* fastDTW.h in Headers */,
+				1C2E7A6E225D19C4002D1D2B /* rapidStream.h in Headers */,
+				1C2E7A71225D19C4002D1D2B /* dtw.h in Headers */,
+				1C2E7A7A225D19C4002D1D2B /* regression.h in Headers */,
+				1C2E7A85225D19C4002D1D2B /* nnEmbindings.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,8 +360,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C2E7A2B225D19C4002D1D2B /* Doxyfile in Resources */,
+				1C2E7A84225D19C4002D1D2B /* rapidLibPost.js in Resources */,
+				1C2E7A29225D19C4002D1D2B /* README.md in Resources */,
+				1C2E7A86225D19C4002D1D2B /* nodeEnv.js in Resources */,
 				1CA70CFD225BB66E0097DBF8 /* maxmspsdk.xcconfig in Resources */,
-				1CA718C3225BBC100097DBF8 /* rapidMix.js in Resources */,
+				1C2E7A2A225D19C4002D1D2B /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,13 +386,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CA718C6225BBC100097DBF8 /* classification.cpp in Sources */,
-				1CA718BF225BBC100097DBF8 /* modelSet.cpp in Sources */,
+				1C2E7A78225D19C4002D1D2B /* searchWindow.cpp in Sources */,
+				1C2E7A28225D19C4002D1D2B /* libsvm.cpp in Sources */,
+				1C2E7A2D225D19C4002D1D2B /* filter_utilities.cpp in Sources */,
+				1C2E7A87225D19C4002D1D2B /* classification.cpp in Sources */,
+				1C2E7A72225D19C4002D1D2B /* fastDTW.cpp in Sources */,
+				1C2E7A70225D19C4002D1D2B /* svmClassification.cpp in Sources */,
+				1C2E7A6F225D19C4002D1D2B /* regression.cpp in Sources */,
 				1CA710F8225BB6B20097DBF8 /* rapidmax.cpp in Sources */,
-				1CA718B8225BBC100097DBF8 /* jsoncpp.cpp in Sources */,
-				1CA718CA225BBC100097DBF8 /* knnClassification.cpp in Sources */,
-				1CA718BA225BBC100097DBF8 /* regression.cpp in Sources */,
-				1CA718BB225BBC100097DBF8 /* neuralNetwork.cpp in Sources */,
+				1C2E7A73225D19C4002D1D2B /* dtw.cpp in Sources */,
+				1C2E7A2F225D19C4002D1D2B /* BayesianFilter.cpp in Sources */,
+				1C2E7A7C225D19C4002D1D2B /* modelSet.cpp in Sources */,
+				1C2E7A8E225D19C4002D1D2B /* seriesClassification.cpp in Sources */,
+				1C2E7A8D225D19C4002D1D2B /* warpPath.cpp in Sources */,
+				1C2E7A6D225D19C4002D1D2B /* rapidStream.cpp in Sources */,
+				1C2E7A30225D19C4002D1D2B /* jsoncpp.cpp in Sources */,
+				1C2E7A8F225D19C4002D1D2B /* knnClassification.cpp in Sources */,
+				1C2E7A74225D19C4002D1D2B /* neuralNetwork.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +470,6 @@
 					"\"$(C74SUPPORT)/msp-includes\"",
 					"\"$(C74SUPPORT)/jit-includes\"",
 					"\"$(PROJECT_DIR)/../../include/RapidLib/src\"",
-					"\"$(PROJECT_DIR)/../../include/RapidLib/dependancies/json\"",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "$(C74_SYM_LINKER_FLAGS)";
@@ -352,7 +491,6 @@
 					"\"$(C74SUPPORT)/msp-includes\"",
 					"\"$(C74SUPPORT)/jit-includes\"",
 					"\"$(PROJECT_DIR)/../../include/RapidLib/src\"",
-					"\"$(PROJECT_DIR)/../../include/RapidLib/dependancies/json\"",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "$(C74_SYM_LINKER_FLAGS)";
