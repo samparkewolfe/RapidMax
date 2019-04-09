@@ -17,7 +17,7 @@ typedef struct _rapidmax
     void *m_outlet1, *m_outlet2;
     std::vector<trainingExample> trainingSet;
     std::string modeltype;
-    modelSet *model;
+    modelSet<double> *model;
     bool trained = false;
     
 } t_rapidmax;
@@ -109,7 +109,7 @@ void rapidmax_initialize(t_rapidmax *x)
     
     if(x->model != nullptr)
     {
-        x->model->initialize();
+        x->model->reset ();
         delete x->model;
         x->model = nullptr;
     }
@@ -272,7 +272,7 @@ void rapidmax_process(t_rapidmax *x, long argc, float *argv)
     
     //process vector using rapid api.
     
-    std::vector<double> prediction_double = x->model->process(inputData_double);
+    std::vector<double> prediction_double = x->model->run(inputData_double);
     
     //convert vector of doubles back into atom array of floats.
     
