@@ -1,14 +1,1 @@
-sysbuild
-*.sdf
-*.suo
-*.sln
-*.opensdf
-log.txt
-externals
-support
-build
-*.o
-*.dylib
-
-*.xcworkspace
-xcuserdata
+.DS_Store

@@ -1,0 +1,3 @@
+[submodule "include/RapidLib"]
+	path = include/RapidLib
+	url = https://gitlab.doc.gold.ac.uk/rapid-mix/RapidLib.git
