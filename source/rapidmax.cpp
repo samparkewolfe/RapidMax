@@ -401,7 +401,8 @@ void rapidmax_train(t_rapidmax *x, t_symbol *s, long argc, t_atom *argv)
         dictionary_getkeys(subdict, &numsubkeys, &subkeys);
         
         long    input_size = 0, output_size = 0;
-        t_atom *input_atoms, *output_atoms = NULL;
+		t_atom *input_atoms = NULL;
+		t_atom *output_atoms = NULL;
         
         bool has_input = false, has_output = false;
         
