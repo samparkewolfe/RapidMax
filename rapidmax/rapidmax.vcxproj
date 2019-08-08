@@ -72,6 +72,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TargetExt>mxe64.</TargetExt>
     <ReferencePath>..\include\RapidLib\src;..\include\RapidLib\src\dependencies;$(ReferencePath)</ReferencePath>
+    <OutDir>..\bin</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
